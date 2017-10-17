@@ -1,7 +1,7 @@
 ---
 title: "lab3"
 author: "Lev Vysokiy"
-date: '17 „€„{„„„‘„q„‚„‘ 2017 „s '
+date: '17 Ð¾ÐºÑ‚ÑÐ±Ñ€Ñ 2017 Ð³ '
 output: html_document
 ---
 
@@ -9,66 +9,66 @@ output: html_document
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-**„H„p„t„p„~„y„u 1**
-1. „I„ƒ„„€„|„Ž„x„…„z„„„u „{„€„}„p„~„t„… readLines „t„|„‘ „x„p„s„‚„…„x„{„y „†„p„z„|„p „r „„„u„{„ƒ„„„€„r„„z „r„u„{„„„€„‚ html.
-„R„{„€„|„Ž„{„€ „ƒ„„„‚„€„{ „r „†„p„z„|„u?
-„R„{„€„|„Ž„{„€ „ƒ„y„}„r„€„|„€„r „r „†„p„z„|„u?
+**Ð—Ð°Ð´Ð°Ð½Ð¸Ðµ 1**
+1. Ð˜ÑÐ¿Ð¾Ð»ÑŒÐ·ÑƒÐ¹Ñ‚Ðµ ÐºÐ¾Ð¼Ð°Ð½Ð´Ñƒ readLines Ð´Ð»Ñ Ð·Ð°Ð³Ñ€ÑƒÐ·ÐºÐ¸ Ñ„Ð°Ð¹Ð»Ð° Ð² Ñ‚ÐµÐºÑÑ‚Ð¾Ð²Ñ‹Ð¹ Ð²ÐµÐºÑ‚Ð¾Ñ€ html.
+Ð¡ÐºÐ¾Ð»ÑŒÐºÐ¾ ÑÑ‚Ñ€Ð¾Ðº Ð² Ñ„Ð°Ð¹Ð»Ðµ?
+Ð¡ÐºÐ¾Ð»ÑŒÐºÐ¾ ÑÐ¸Ð¼Ð²Ð¾Ð»Ð¾Ð² Ð² Ñ„Ð°Ð¹Ð»Ðµ?
 ```{r}
 html <- readLines('https://raw.githubusercontent.com/SergeyMirvoda/MD-DA-2017/master/data/forbes.htm');
 #print(html);
 length(html);
 sum(nchar(html));
 ```
-1991 „ƒ„„„‚„€„{„p
-80380 „ƒ„y„}„r„€„|„€„r
-2. „O„„„{„‚„€„z„„„u „†„p„z„| „r „„„u„{„ƒ„„„€„r„€„} „‚„u„t„p„{„„„€„‚„u. „N„p„z„t„y„„„u „ƒ„„„‚„€„{„y, „ƒ„€„t„u„‚„w„p„‹„y„u „t„p„~„~„„u „€ „A„y„|„|„u „C„u„z„„„ƒ„u „y „L„p„‚„‚„y „^„|„|„y„ƒ„€„~„u „y „x„p„„€„}„~„y„„„u „‚„p„x„}„u„‚ „y„‡ „t„€„‡„€„t„p.
-3. „N„p„„y„Š„y„„„u „Š„p„q„|„€„~ „‚„u„s„…„|„‘„‚„~„€„s„€ „r„„‚„p„w„u„~„y„‘ „y „y„ƒ„„€„|„Ž„x„…„z„„„u „†„…„~„{„ˆ„y„ grep, „‰„„„€„q„ „y„x„r„|„u„‰„Ž „‚„p„x„}„u„‚ „t„€„‡„€„t„p „y„x „t„p„~„~„„‡ „r „r„u„{„„„€„‚„u html. „T„t„€„ƒ„„„€„r„u„‚„Ž„„„u„ƒ„Ž, „‰„„„€ „„€„|„…„‰„u„~„~„„z „r„u„{„„„€„‚ „~„€„}„u„‚„€„r „ƒ„„„‚„€„{ „ƒ„€„t„u„‚„w„y„„ „ƒ„€„t„u„‚„w„y„„ „‚„€„r„~„€ 100 „x„p„„y„ƒ„u„z „y „ƒ„ƒ„„|„p„u„„„ƒ„‘ „~„p „~„€„}„u„‚„p „ƒ„„„‚„€„{ „r „{„€„„„‚„„‡ „t„u„z„ƒ„„„r„y„„„u„|„Ž„~„€ „u„ƒ„„„Ž „y„~„†„€„‚„}„p„ˆ„y„‘ „€ „t„€„‡„€„t„u, „p „~„u „„‚„€„ƒ„„„€ „„u„‚„r„„z „„€„„p„r„Š„y„z„ƒ„‘ „„„u„{„ƒ„„.
+1991 ÑÑ‚Ñ€Ð¾ÐºÐ°
+80380 ÑÐ¸Ð¼Ð²Ð¾Ð»Ð¾Ð²
+2. ÐžÑ‚ÐºÑ€Ð¾Ð¹Ñ‚Ðµ Ñ„Ð°Ð¹Ð» Ð² Ñ‚ÐµÐºÑÑ‚Ð¾Ð²Ð¾Ð¼ Ñ€ÐµÐ´Ð°ÐºÑ‚Ð¾Ñ€Ðµ. ÐÐ°Ð¹Ð´Ð¸Ñ‚Ðµ ÑÑ‚Ñ€Ð¾ÐºÐ¸, ÑÐ¾Ð´ÐµÑ€Ð¶Ð°Ñ‰Ð¸Ðµ Ð´Ð°Ð½Ð½Ñ‹Ðµ Ð¾ Ð‘Ð¸Ð»Ð»Ðµ Ð“ÐµÐ¹Ñ‚ÑÐµ Ð¸ Ð›Ð°Ñ€Ñ€Ð¸ Ð­Ð»Ð»Ð¸ÑÐ¾Ð½Ðµ Ð¸ Ð·Ð°Ð¿Ð¾Ð¼Ð½Ð¸Ñ‚Ðµ Ñ€Ð°Ð·Ð¼ÐµÑ€ Ð¸Ñ… Ð´Ð¾Ñ…Ð¾Ð´Ð°.
+3. ÐÐ°Ð¿Ð¸ÑˆÐ¸Ñ‚Ðµ ÑˆÐ°Ð±Ð»Ð¾Ð½ Ñ€ÐµÐ³ÑƒÐ»ÑÑ€Ð½Ð¾Ð³Ð¾ Ð²Ñ‹Ñ€Ð°Ð¶ÐµÐ½Ð¸Ñ Ð¸ Ð¸ÑÐ¿Ð¾Ð»ÑŒÐ·ÑƒÐ¹Ñ‚Ðµ Ñ„ÑƒÐ½ÐºÑ†Ð¸ÑŽ grep, Ñ‡Ñ‚Ð¾Ð±Ñ‹ Ð¸Ð·Ð²Ð»ÐµÑ‡ÑŒ Ñ€Ð°Ð·Ð¼ÐµÑ€ Ð´Ð¾Ñ…Ð¾Ð´Ð° Ð¸Ð· Ð´Ð°Ð½Ð½Ñ‹Ñ… Ð² Ð²ÐµÐºÑ‚Ð¾Ñ€Ðµ html. Ð£Ð´Ð¾ÑÑ‚Ð¾Ð²ÐµÑ€ÑŒÑ‚ÐµÑÑŒ, Ñ‡Ñ‚Ð¾ Ð¿Ð¾Ð»ÑƒÑ‡ÐµÐ½Ð½Ñ‹Ð¹ Ð²ÐµÐºÑ‚Ð¾Ñ€ Ð½Ð¾Ð¼ÐµÑ€Ð¾Ð² ÑÑ‚Ñ€Ð¾Ðº ÑÐ¾Ð´ÐµÑ€Ð¶Ð¸Ñ‚ ÑÐ¾Ð´ÐµÑ€Ð¶Ð¸Ñ‚ Ñ€Ð¾Ð²Ð½Ð¾ 100 Ð·Ð°Ð¿Ð¸ÑÐµÐ¹ Ð¸ ÑÑÑ‹Ð»Ð°ÐµÑ‚ÑÑ Ð½Ð° Ð½Ð¾Ð¼ÐµÑ€Ð° ÑÑ‚Ñ€Ð¾Ðº Ð² ÐºÐ¾Ñ‚Ñ€Ñ‹Ñ… Ð´ÐµÐ¹ÑÑ‚Ð²Ð¸Ñ‚ÐµÐ»ÑŒÐ½Ð¾ ÐµÑÑ‚ÑŒ Ð¸Ð½Ñ„Ð¾Ñ€Ð¼Ð°Ñ†Ð¸Ñ Ð¾ Ð´Ð¾Ñ…Ð¾Ð´Ðµ, Ð° Ð½Ðµ Ð¿Ñ€Ð¾ÑÑ‚Ð¾ Ð¿ÐµÑ€Ð²Ñ‹Ð¹ Ð¿Ð¾Ð¿Ð°Ð²ÑˆÐ¸Ð¹ÑÑ Ñ‚ÐµÐºÑÑ‚.
 ```{r}
 grep("\\$[0-9]{1, }\\sB|\\$[0-9]{1,}\\,[0-9]{1,}\\sB", html)
 ```
-4. „N„p„„y„Š„y„„„u „{„€„t, „y„ƒ„„€„|„Ž„x„€„r„p„r „‚„u„s„…„|„‘„‚„~„€„u „r„„‚„p„w„u„~„y„u „y„x „. 3, „y „†„…„~„{„ˆ„y„y regexp „y regmatches, „‰„„„€„q„ „y„x„r„|„u„‰„Ž „r„ƒ„u „t„p„~„~„„u „€ „t„€„‡„€„t„u. „P„‚„€„r„u„‚„Ž„„„u „ƒ„|„u„t„…„„‹„u„u:
-„D„€„|„w„~„€ „q„„„„Ž „‚„€„r„~„€ „ƒ„„„€ „x„~„p„‰„u„~„y„z.
-„R„p„}„„z „q„€„|„Ž„Š„€„z „t„€„‡„€„t „t„€„|„w„u„~ „q„„„„Ž „t„€„‡„€„t „A„y„|„|„p „C„u„z„„„ƒ„p
-„S„p„{„€„z „t„€„‡„€„t „t„€„|„w„u„~ „q„„„„Ž „r „ƒ„„y„ƒ„{„u „€„t„y„~ „‚„p„x.
-„B „r„ƒ„„y„ƒ„{„u „t„€„|„w„~„p „q„„„„Ž „ˆ„y„†„‚„p, „{„€„„„€„‚„…„ „}„ „x„p„„€„}„~„y„|„y „t„|„‘ „L„p„‚„‚„y „^„|„|„y„ƒ„€„~„p.
-„D„€„|„w„~„€ „q„„„„Ž „{„p„{ „}„y„~„y„}„…„} „t„r„p „x„~„p„‰„u„~„y„‘, „r„ƒ„„„‚„u„‰„p„„‹„y„‡„ƒ„‘ „~„u„ƒ„{„€„|„Ž„{„€ „‚„p„x.
+4. ÐÐ°Ð¿Ð¸ÑˆÐ¸Ñ‚Ðµ ÐºÐ¾Ð´, Ð¸ÑÐ¿Ð¾Ð»ÑŒÐ·Ð¾Ð²Ð°Ð² Ñ€ÐµÐ³ÑƒÐ»ÑÑ€Ð½Ð¾Ðµ Ð²Ñ‹Ñ€Ð°Ð¶ÐµÐ½Ð¸Ðµ Ð¸Ð· Ð¿. 3, Ð¸ Ñ„ÑƒÐ½ÐºÑ†Ð¸Ð¸ regexp Ð¸ regmatches, Ñ‡Ñ‚Ð¾Ð±Ñ‹ Ð¸Ð·Ð²Ð»ÐµÑ‡ÑŒ Ð²ÑÐµ Ð´Ð°Ð½Ð½Ñ‹Ðµ Ð¾ Ð´Ð¾Ñ…Ð¾Ð´Ðµ. ÐŸÑ€Ð¾Ð²ÐµÑ€ÑŒÑ‚Ðµ ÑÐ»ÐµÐ´ÑƒÑŽÑ‰ÐµÐµ:
+Ð”Ð¾Ð»Ð¶Ð½Ð¾ Ð±Ñ‹Ñ‚ÑŒ Ñ€Ð¾Ð²Ð½Ð¾ ÑÑ‚Ð¾ Ð·Ð½Ð°Ñ‡ÐµÐ½Ð¸Ð¹.
+Ð¡Ð°Ð¼Ñ‹Ð¹ Ð±Ð¾Ð»ÑŒÑˆÐ¾Ð¹ Ð´Ð¾Ñ…Ð¾Ð´ Ð´Ð¾Ð»Ð¶ÐµÐ½ Ð±Ñ‹Ñ‚ÑŒ Ð´Ð¾Ñ…Ð¾Ð´ Ð‘Ð¸Ð»Ð»Ð° Ð“ÐµÐ¹Ñ‚ÑÐ°
+Ð¢Ð°ÐºÐ¾Ð¹ Ð´Ð¾Ñ…Ð¾Ð´ Ð´Ð¾Ð»Ð¶ÐµÐ½ Ð±Ñ‹Ñ‚ÑŒ Ð² ÑÐ¿Ð¸ÑÐºÐµ Ð¾Ð´Ð¸Ð½ Ñ€Ð°Ð·.
+Ð’ Ð²ÑÐ¿Ð¸ÑÐºÐµ Ð´Ð¾Ð»Ð¶Ð½Ð° Ð±Ñ‹Ñ‚ÑŒ Ñ†Ð¸Ñ„Ñ€Ð°, ÐºÐ¾Ñ‚Ð¾Ñ€ÑƒÑŽ Ð¼Ñ‹ Ð·Ð°Ð¿Ð¾Ð¼Ð½Ð¸Ð»Ð¸ Ð´Ð»Ñ Ð›Ð°Ñ€Ñ€Ð¸ Ð­Ð»Ð»Ð¸ÑÐ¾Ð½Ð°.
+Ð”Ð¾Ð»Ð¶Ð½Ð¾ Ð±Ñ‹Ñ‚ÑŒ ÐºÐ°Ðº Ð¼Ð¸Ð½Ð¸Ð¼ÑƒÐ¼ Ð´Ð²Ð° Ð·Ð½Ð°Ñ‡ÐµÐ½Ð¸Ñ, Ð²ÑÑ‚Ñ€ÐµÑ‡Ð°ÑŽÑ‰Ð¸Ñ…ÑÑ Ð½ÐµÑÐºÐ¾Ð»ÑŒÐºÐ¾ Ñ€Ð°Ð·.
 ```{r}
 matches <- regmatches(html,regexpr("\\$[0-9]{1, }\\sB|\\$[0-9]{1,}\\,[0-9]{1,}\\sB", html));
 print(matches);
 ```
-**„H„p„t„p„~„y„u 2**
-5. „B „t„p„~„~„„‡ „t„€„‡„€„t „„‚„u„t„ƒ„„„p„r„|„u„~ „r „†„€„‚„}„p„„„u "$42 B", „‰„„„€ „€„x„~„p„‰„p„u„„ 42 ~ 10^9. „P„‚„u„€„q„‚„p„x„…„z„„„u „„„„€„„ „†„€„‚„}„p„„ „r „‰„y„ƒ„|„€„r„€„z „y „ƒ„€„‡„‚„p„~„y„„„u „r „r„u„{„„„€„‚ worths. „T„t„€„ƒ„„„€„r„u„‚„Ž„„„u„ƒ„Ž „r „ƒ„|„u„t„…„„‹„u„}:
--worths „‘„r„|„‘„u„„„ƒ„‘ „r„u„{„„„€„‚„€„} „y „r „~„v„} „ƒ„„„€ „x„p„~„‰„u„~„y„z „„„y„„p double.
--„B„ƒ„u „„|„u„}„u„~„„„ „r„u„{„„„€„‚„p worths „q„€„|„Ž„Š„u 1 „}„y„|„|„y„p„‚„t„p.
--„R„p„}„€„u „q„€„|„Ž„Š„€„u „‰„y„ƒ„|„€ „„„„€ „t„€„‡„€„t „A„y„|„|„p „C„u„z„„„ƒ„p.
+**Ð—Ð°Ð´Ð°Ð½Ð¸Ðµ 2**
+5. Ð’ Ð´Ð°Ð½Ð½Ñ‹Ñ… Ð´Ð¾Ñ…Ð¾Ð´ Ð¿Ñ€ÐµÐ´ÑÑ‚Ð°Ð²Ð»ÐµÐ½ Ð² Ñ„Ð¾Ñ€Ð¼Ð°Ñ‚Ðµ "$42 B", Ñ‡Ñ‚Ð¾ Ð¾Ð·Ð½Ð°Ñ‡Ð°ÐµÑ‚ 42 Ã— 10^9. ÐŸÑ€ÐµÐ¾Ð±Ñ€Ð°Ð·ÑƒÐ¹Ñ‚Ðµ ÑÑ‚Ð¾Ñ‚ Ñ„Ð¾Ñ€Ð¼Ð°Ñ‚ Ð² Ñ‡Ð¸ÑÐ»Ð¾Ð²Ð¾Ð¹ Ð¸ ÑÐ¾Ñ…Ñ€Ð°Ð½Ð¸Ñ‚Ðµ Ð² Ð²ÐµÐºÑ‚Ð¾Ñ€ worths. Ð£Ð´Ð¾ÑÑ‚Ð¾Ð²ÐµÑ€ÑŒÑ‚ÐµÑÑŒ Ð² ÑÐ»ÐµÐ´ÑƒÑŽÑ‰ÐµÐ¼:
+-worths ÑÐ²Ð»ÑÐµÑ‚ÑÑ Ð²ÐµÐºÑ‚Ð¾Ñ€Ð¾Ð¼ Ð¸ Ð² Ð½Ñ‘Ð¼ ÑÑ‚Ð¾ Ð·Ð°Ð½Ñ‡ÐµÐ½Ð¸Ð¹ Ñ‚Ð¸Ð¿Ð° double.
+-Ð’ÑÐµ ÑÐ»ÐµÐ¼ÐµÐ½Ñ‚Ñ‹ Ð²ÐµÐºÑ‚Ð¾Ñ€Ð° worths Ð±Ð¾Ð»ÑŒÑˆÐµ 1 Ð¼Ð¸Ð»Ð»Ð¸Ð°Ñ€Ð´Ð°.
+-Ð¡Ð°Ð¼Ð¾Ðµ Ð±Ð¾Ð»ÑŒÑˆÐ¾Ðµ Ñ‡Ð¸ÑÐ»Ð¾ ÑÑ‚Ð¾ Ð´Ð¾Ñ…Ð¾Ð´ Ð‘Ð¸Ð»Ð»Ð° Ð“ÐµÐ¹Ñ‚ÑÐ°.
 ```{r}
 strValues <- regmatches(matches,regexpr("[0-9]{1, }|[0-9]{1,}\\,[0-9]{1,}", matches));
 replaced <- gsub(",", ".", nums);
 worths <- as.numeric(replaced) * 10^9;
 print(worths);
 ```
-6. „I„ƒ„„€„|„Ž„x„…„z„„„u „r„u„{„„„€„‚ worths , „‰„„„€„q„ „r„„‘„ƒ„~„y„„„Ž „ƒ„|„u„t„…„„‹„u„u:
-„K„p„{„€„r„p „}„u„t„y„p„~„p „ƒ„„„p „„„„y„‡ „x„p„„y„ƒ„u„z?
-„R„‚„u„t„~„y„z „t„€„‡„€„t?
-„K„p„{ „}„~„€„s„€ „|„„t„u„z „y„x „„„„€„s„€ „ƒ„„y„ƒ„{„p „y„}„u„„„ „t„€„‡„€„t „q„€„|„Ž„Š„u 5„}„|„‚„t., 10, 25?
-„K„p„{„€„z „y„‡ „€„q„‹„y„z „t„€„‡„€„t?
-„K„p„{„…„ „t„€„|„ „€„„ „€„q„‹„u„s„€ „t„€„‡„€„t„p, „ƒ„€„ƒ„„„p„r„|„‘„u„„ „„‘„„„v„‚„{„p „ƒ„p„}„„‡ „q„€„s„p„„„„‡.
-„K„p„{„…„ „t„€„|„ „€„„ „€„q„‹„u„s„€ „t„€„‡„€„t„p, „ƒ„€„ƒ„„„p„r„|„‘„„„ 20 „ƒ„p„}„„‡ „q„€„s„p„„„„‡.
-„B „t„p„~„~„„‡ „†„u„t„u„‚„p„|„Ž„~„€„s„€ „‚„u„x„u„‚„r„p „R„Y„@ „~„p„z„t„y„„„u „„€„{„p„x„p„„„u„|„Ž „t„€„‡„€„t„p „r„ƒ„u„‡ „t„€„}„€„‡„€„x„‘„z„ƒ„„„r (Household net worth) „r „ƒ„€„€„„„r„u„„„r„…„„‹„u„} „s„€„t„…, „{„p„{„…„ „t„€„|„ „€„q„‹„u„s„€ „t„€„‡„€„t„p „ƒ„€„ƒ„„„p„r„|„‘„„„ 100 „q„€„s„p„„„u„z„Š„y„‡ „|„„t„u„z.
+6. Ð˜ÑÐ¿Ð¾Ð»ÑŒÐ·ÑƒÐ¹Ñ‚Ðµ Ð²ÐµÐºÑ‚Ð¾Ñ€ worths , Ñ‡Ñ‚Ð¾Ð±Ñ‹ Ð²Ñ‹ÑÑÐ½Ð¸Ñ‚ÑŒ ÑÐ»ÐµÐ´ÑƒÑŽÑ‰ÐµÐµ:
+ÐšÐ°ÐºÐ¾Ð²Ð° Ð¼ÐµÐ´Ð¸Ð°Ð½Ð° ÑÑ‚Ð° ÑÑ‚Ð¸Ñ… Ð·Ð°Ð¿Ð¸ÑÐµÐ¹?
+Ð¡Ñ€ÐµÐ´Ð½Ð¸Ð¹ Ð´Ð¾Ñ…Ð¾Ð´?
+ÐšÐ°Ðº Ð¼Ð½Ð¾Ð³Ð¾ Ð»ÑŽÐ´ÐµÐ¹ Ð¸Ð· ÑÑ‚Ð¾Ð³Ð¾ ÑÐ¿Ð¸ÑÐºÐ° Ð¸Ð¼ÐµÑŽÑ‚ Ð´Ð¾Ñ…Ð¾Ð´ Ð±Ð¾Ð»ÑŒÑˆÐµ 5Ð¼Ð»Ñ€Ð´., 10, 25?
+ÐšÐ°ÐºÐ¾Ð¹ Ð¸Ñ… Ð¾Ð±Ñ‰Ð¸Ð¹ Ð´Ð¾Ñ…Ð¾Ð´?
+ÐšÐ°ÐºÑƒÑŽ Ð´Ð¾Ð»ÑŽ Ð¾Ñ‚ Ð¾Ð±Ñ‰ÐµÐ³Ð¾ Ð´Ð¾Ñ…Ð¾Ð´Ð°, ÑÐ¾ÑÑ‚Ð°Ð²Ð»ÑÐµÑ‚ Ð¿ÑÑ‚Ñ‘Ñ€ÐºÐ° ÑÐ°Ð¼Ñ‹Ñ… Ð±Ð¾Ð³Ð°Ñ‚Ñ‹Ñ….
+ÐšÐ°ÐºÑƒÑŽ Ð´Ð¾Ð»ÑŽ Ð¾Ñ‚ Ð¾Ð±Ñ‰ÐµÐ³Ð¾ Ð´Ð¾Ñ…Ð¾Ð´Ð°, ÑÐ¾ÑÑ‚Ð°Ð²Ð»ÑÑŽÑ‚ 20 ÑÐ°Ð¼Ñ‹Ñ… Ð±Ð¾Ð³Ð°Ñ‚Ñ‹Ñ….
+Ð’ Ð´Ð°Ð½Ð½Ñ‹Ñ… Ñ„ÐµÐ´ÐµÑ€Ð°Ð»ÑŒÐ½Ð¾Ð³Ð¾ Ñ€ÐµÐ·ÐµÑ€Ð²Ð° Ð¡Ð¨Ð Ð½Ð°Ð¹Ð´Ð¸Ñ‚Ðµ Ð¿Ð¾ÐºÐ°Ð·Ð°Ñ‚ÐµÐ»ÑŒ Ð´Ð¾Ñ…Ð¾Ð´Ð° Ð²ÑÐµÑ… Ð´Ð¾Ð¼Ð¾Ñ…Ð¾Ð·ÑÐ¹ÑÑ‚Ð² (Household net worth) Ð² ÑÐ¾Ð¾Ñ‚Ð²ÐµÑ‚Ð²ÑƒÑŽÑ‰ÐµÐ¼ Ð³Ð¾Ð´Ñƒ, ÐºÐ°ÐºÑƒÑŽ Ð´Ð¾Ð»ÑŽ Ð¾Ð±Ñ‰ÐµÐ³Ð¾ Ð´Ð¾Ñ…Ð¾Ð´Ð° ÑÐ¾ÑÑ‚Ð°Ð²Ð»ÑÑŽÑ‚ 100 Ð±Ð¾Ð³Ð°Ñ‚ÐµÐ¹ÑˆÐ¸Ñ… Ð»ÑŽÐ´ÐµÐ¹.
 ```{r}
-median(worths); #„}„u„t„y„p„~„p
-mean(worths); #„ƒ„‚„u„t„~„u„u
-length(worths[worths > 5*10^9]); #„t„€„‡„€„t „q„€„|„Ž„Š„u 5„}„|„‚„t
-length(worths[worths > 10*10^9]); #„t„€„‡„€„t „q„€„|„Ž„Š„u 10„}„|„‚„t
-length(worths[worths > 25*10^9]); #„t„€„‡„€„t „q„€„|„Ž„Š„u 25„}„|„‚„t
-allSum <- sum(worths); #„€„q„‹„y„z „t„€„‡„€„t 
-first5sum <- sum(worths[1:5]); #„ƒ„…„}„}„p „„u„‚„r„„‡ 5
-shareOfFirst5 <- first5sum/allSum; #„t„€„|„‘ „„u„‚„r„„‡ 5
+median(worths); #Ð¼ÐµÐ´Ð¸Ð°Ð½Ð°
+mean(worths); #ÑÑ€ÐµÐ´Ð½ÐµÐµ
+length(worths[worths > 5*10^9]); #Ð´Ð¾Ñ…Ð¾Ð´ Ð±Ð¾Ð»ÑŒÑˆÐµ 5Ð¼Ð»Ñ€Ð´
+length(worths[worths > 10*10^9]); #Ð´Ð¾Ñ…Ð¾Ð´ Ð±Ð¾Ð»ÑŒÑˆÐµ 10Ð¼Ð»Ñ€Ð´
+length(worths[worths > 25*10^9]); #Ð´Ð¾Ñ…Ð¾Ð´ Ð±Ð¾Ð»ÑŒÑˆÐµ 25Ð¼Ð»Ñ€Ð´
+allSum <- sum(worths); #Ð¾Ð±Ñ‰Ð¸Ð¹ Ð´Ð¾Ñ…Ð¾Ð´ 
+first5sum <- sum(worths[1:5]); #ÑÑƒÐ¼Ð¼Ð° Ð¿ÐµÑ€Ð²Ñ‹Ñ… 5
+shareOfFirst5 <- first5sum/allSum; #Ð´Ð¾Ð»Ñ Ð¿ÐµÑ€Ð²Ñ‹Ñ… 5
 print(shareOfFirst5);
-first20sum <- sum(worths[1:20]); #„ƒ„…„}„}„p „„u„‚„r„„‡ 20
-shareOfFirst20 <- first20sum/allSum; #„t„€„|„‘ „„u„‚„r„„‡ 20
+first20sum <- sum(worths[1:20]); #ÑÑƒÐ¼Ð¼Ð° Ð¿ÐµÑ€Ð²Ñ‹Ñ… 20
+shareOfFirst20 <- first20sum/allSum; #Ð´Ð¾Ð»Ñ Ð¿ÐµÑ€Ð²Ñ‹Ñ… 20
 print(shareOfFirst20);
-householdNetWorth <- 78536 * 10^9; #„t„€„‡„€„t „r„ƒ„u„‡ „t„€„}„€„‡„€„x„‘„z„ƒ„„„r
-shareOfHousehold <- allSum/householdNetWorth; #„t„€„‡„€„t „€„„ „r„ƒ„u„‡ „t„€„}„€„‡„€„x„‘„z„ƒ„„„r
+householdNetWorth <- 78536 * 10^9; #Ð´Ð¾Ñ…Ð¾Ð´ Ð²ÑÐµÑ… Ð´Ð¾Ð¼Ð¾Ñ…Ð¾Ð·ÑÐ¹ÑÑ‚Ð²
+shareOfHousehold <- allSum/householdNetWorth; #Ð´Ð¾Ñ…Ð¾Ð´ Ð¾Ñ‚ Ð²ÑÐµÑ… Ð´Ð¾Ð¼Ð¾Ñ…Ð¾Ð·ÑÐ¹ÑÑ‚Ð²
 print(shareOfHousehold);
 ```
