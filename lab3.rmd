@@ -1,0 +1,74 @@
+---
+title: "lab3"
+author: "Lev Vysokiy"
+date: '17 „€„{„„„‘„q„‚„‘ 2017 „s '
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+**„H„p„t„p„~„y„u 1**
+1. „I„ƒ„„€„|„„x„…„z„„„u „{„€„}„p„~„t„… readLines „t„|„‘ „x„p„s„‚„…„x„{„y „†„p„z„|„p „r „„„u„{„ƒ„„„€„r„„z „r„u„{„„„€„‚ html.
+„R„{„€„|„„{„€ „ƒ„„„‚„€„{ „r „†„p„z„|„u?
+„R„{„€„|„„{„€ „ƒ„y„}„r„€„|„€„r „r „†„p„z„|„u?
+```{r}
+html <- readLines('https://raw.githubusercontent.com/SergeyMirvoda/MD-DA-2017/master/data/forbes.htm');
+#print(html);
+length(html);
+sum(nchar(html));
+```
+1991 „ƒ„„„‚„€„{„p
+80380 „ƒ„y„}„r„€„|„€„r
+2. „O„„„{„‚„€„z„„„u „†„p„z„| „r „„„u„{„ƒ„„„€„r„€„} „‚„u„t„p„{„„„€„‚„u. „N„p„z„t„y„„„u „ƒ„„„‚„€„{„y, „ƒ„€„t„u„‚„w„p„‹„y„u „t„p„~„~„„u „€ „A„y„|„|„u „C„u„z„„„ƒ„u „y „L„p„‚„‚„y „^„|„|„y„ƒ„€„~„u „y „x„p„„€„}„~„y„„„u „‚„p„x„}„u„‚ „y„‡ „t„€„‡„€„t„p.
+3. „N„p„„y„Š„y„„„u „Š„p„q„|„€„~ „‚„u„s„…„|„‘„‚„~„€„s„€ „r„„‚„p„w„u„~„y„‘ „y „y„ƒ„„€„|„„x„…„z„„„u „†„…„~„{„ˆ„y„ grep, „‰„„„€„q„ „y„x„r„|„u„‰„ „‚„p„x„}„u„‚ „t„€„‡„€„t„p „y„x „t„p„~„~„„‡ „r „r„u„{„„„€„‚„u html. „T„t„€„ƒ„„„€„r„u„‚„„„„u„ƒ„, „‰„„„€ „„€„|„…„‰„u„~„~„„z „r„u„{„„„€„‚ „~„€„}„u„‚„€„r „ƒ„„„‚„€„{ „ƒ„€„t„u„‚„w„y„„ „ƒ„€„t„u„‚„w„y„„ „‚„€„r„~„€ 100 „x„p„„y„ƒ„u„z „y „ƒ„ƒ„„|„p„u„„„ƒ„‘ „~„p „~„€„}„u„‚„p „ƒ„„„‚„€„{ „r „{„€„„„‚„„‡ „t„u„z„ƒ„„„r„y„„„u„|„„~„€ „u„ƒ„„„ „y„~„†„€„‚„}„p„ˆ„y„‘ „€ „t„€„‡„€„t„u, „p „~„u „„‚„€„ƒ„„„€ „„u„‚„r„„z „„€„„p„r„Š„y„z„ƒ„‘ „„„u„{„ƒ„„.
+```{r}
+grep("\\$[0-9]{1, }\\sB|\\$[0-9]{1,}\\,[0-9]{1,}\\sB", html)
+```
+4. „N„p„„y„Š„y„„„u „{„€„t, „y„ƒ„„€„|„„x„€„r„p„r „‚„u„s„…„|„‘„‚„~„€„u „r„„‚„p„w„u„~„y„u „y„x „. 3, „y „†„…„~„{„ˆ„y„y regexp „y regmatches, „‰„„„€„q„ „y„x„r„|„u„‰„ „r„ƒ„u „t„p„~„~„„u „€ „t„€„‡„€„t„u. „P„‚„€„r„u„‚„„„„u „ƒ„|„u„t„…„„‹„u„u:
+„D„€„|„w„~„€ „q„„„„ „‚„€„r„~„€ „ƒ„„„€ „x„~„p„‰„u„~„y„z.
+„R„p„}„„z „q„€„|„„Š„€„z „t„€„‡„€„t „t„€„|„w„u„~ „q„„„„ „t„€„‡„€„t „A„y„|„|„p „C„u„z„„„ƒ„p
+„S„p„{„€„z „t„€„‡„€„t „t„€„|„w„u„~ „q„„„„ „r „ƒ„„y„ƒ„{„u „€„t„y„~ „‚„p„x.
+„B „r„ƒ„„y„ƒ„{„u „t„€„|„w„~„p „q„„„„ „ˆ„y„†„‚„p, „{„€„„„€„‚„…„ „}„ „x„p„„€„}„~„y„|„y „t„|„‘ „L„p„‚„‚„y „^„|„|„y„ƒ„€„~„p.
+„D„€„|„w„~„€ „q„„„„ „{„p„{ „}„y„~„y„}„…„} „t„r„p „x„~„p„‰„u„~„y„‘, „r„ƒ„„„‚„u„‰„p„„‹„y„‡„ƒ„‘ „~„u„ƒ„{„€„|„„{„€ „‚„p„x.
+```{r}
+matches <- regmatches(html,regexpr("\\$[0-9]{1, }\\sB|\\$[0-9]{1,}\\,[0-9]{1,}\\sB", html));
+print(matches);
+```
+**„H„p„t„p„~„y„u 2**
+5. „B „t„p„~„~„„‡ „t„€„‡„€„t „„‚„u„t„ƒ„„„p„r„|„u„~ „r „†„€„‚„}„p„„„u "$42 B", „‰„„„€ „€„x„~„p„‰„p„u„„ 42 ~ 10^9. „P„‚„u„€„q„‚„p„x„…„z„„„u „„„„€„„ „†„€„‚„}„p„„ „r „‰„y„ƒ„|„€„r„€„z „y „ƒ„€„‡„‚„p„~„y„„„u „r „r„u„{„„„€„‚ worths. „T„t„€„ƒ„„„€„r„u„‚„„„„u„ƒ„ „r „ƒ„|„u„t„…„„‹„u„}:
+-worths „‘„r„|„‘„u„„„ƒ„‘ „r„u„{„„„€„‚„€„} „y „r „~„v„} „ƒ„„„€ „x„p„~„‰„u„~„y„z „„„y„„p double.
+-„B„ƒ„u „„|„u„}„u„~„„„ „r„u„{„„„€„‚„p worths „q„€„|„„Š„u 1 „}„y„|„|„y„p„‚„t„p.
+-„R„p„}„€„u „q„€„|„„Š„€„u „‰„y„ƒ„|„€ „„„„€ „t„€„‡„€„t „A„y„|„|„p „C„u„z„„„ƒ„p.
+```{r}
+strValues <- regmatches(matches,regexpr("[0-9]{1, }|[0-9]{1,}\\,[0-9]{1,}", matches));
+replaced <- gsub(",", ".", nums);
+worths <- as.numeric(replaced) * 10^9;
+print(worths);
+```
+6. „I„ƒ„„€„|„„x„…„z„„„u „r„u„{„„„€„‚ worths , „‰„„„€„q„ „r„„‘„ƒ„~„y„„„ „ƒ„|„u„t„…„„‹„u„u:
+„K„p„{„€„r„p „}„u„t„y„p„~„p „ƒ„„„p „„„„y„‡ „x„p„„y„ƒ„u„z?
+„R„‚„u„t„~„y„z „t„€„‡„€„t?
+„K„p„{ „}„~„€„s„€ „|„„t„u„z „y„x „„„„€„s„€ „ƒ„„y„ƒ„{„p „y„}„u„„„ „t„€„‡„€„t „q„€„|„„Š„u 5„}„|„‚„t., 10, 25?
+„K„p„{„€„z „y„‡ „€„q„‹„y„z „t„€„‡„€„t?
+„K„p„{„…„ „t„€„|„ „€„„ „€„q„‹„u„s„€ „t„€„‡„€„t„p, „ƒ„€„ƒ„„„p„r„|„‘„u„„ „„‘„„„v„‚„{„p „ƒ„p„}„„‡ „q„€„s„p„„„„‡.
+„K„p„{„…„ „t„€„|„ „€„„ „€„q„‹„u„s„€ „t„€„‡„€„t„p, „ƒ„€„ƒ„„„p„r„|„‘„„„ 20 „ƒ„p„}„„‡ „q„€„s„p„„„„‡.
+„B „t„p„~„~„„‡ „†„u„t„u„‚„p„|„„~„€„s„€ „‚„u„x„u„‚„r„p „R„Y„@ „~„p„z„t„y„„„u „„€„{„p„x„p„„„u„|„ „t„€„‡„€„t„p „r„ƒ„u„‡ „t„€„}„€„‡„€„x„‘„z„ƒ„„„r (Household net worth) „r „ƒ„€„€„„„r„u„„„r„…„„‹„u„} „s„€„t„…, „{„p„{„…„ „t„€„|„ „€„q„‹„u„s„€ „t„€„‡„€„t„p „ƒ„€„ƒ„„„p„r„|„‘„„„ 100 „q„€„s„p„„„u„z„Š„y„‡ „|„„t„u„z.
+```{r}
+median(worths); #„}„u„t„y„p„~„p
+mean(worths); #„ƒ„‚„u„t„~„u„u
+length(worths[worths > 5*10^9]); #„t„€„‡„€„t „q„€„|„„Š„u 5„}„|„‚„t
+length(worths[worths > 10*10^9]); #„t„€„‡„€„t „q„€„|„„Š„u 10„}„|„‚„t
+length(worths[worths > 25*10^9]); #„t„€„‡„€„t „q„€„|„„Š„u 25„}„|„‚„t
+allSum <- sum(worths); #„€„q„‹„y„z „t„€„‡„€„t 
+first5sum <- sum(worths[1:5]); #„ƒ„…„}„}„p „„u„‚„r„„‡ 5
+shareOfFirst5 <- first5sum/allSum; #„t„€„|„‘ „„u„‚„r„„‡ 5
+print(shareOfFirst5);
+first20sum <- sum(worths[1:20]); #„ƒ„…„}„}„p „„u„‚„r„„‡ 20
+shareOfFirst20 <- first20sum/allSum; #„t„€„|„‘ „„u„‚„r„„‡ 20
+print(shareOfFirst20);
+householdNetWorth <- 78536 * 10^9; #„t„€„‡„€„t „r„ƒ„u„‡ „t„€„}„€„‡„€„x„‘„z„ƒ„„„r
+shareOfHousehold <- allSum/householdNetWorth; #„t„€„‡„€„t „€„„ „r„ƒ„u„‡ „t„€„}„€„‡„€„x„‘„z„ƒ„„„r
+print(shareOfHousehold);
+```
